@@ -22,3 +22,28 @@ body {
 .ant-tabs-nav-operations {
   display: none !important;
 }
+
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-tab {
+  margin: 0 0 4px 0 !important;
+}
+
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list::-webkit-scrollbar,
+.ant-tabs-content .overflow-y-auto::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list::-webkit-scrollbar-track,
+.ant-tabs-content .overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list::-webkit-scrollbar-thumb,
+.ant-tabs-content .overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: #D0D0D0;
+  border-radius: 4px;
+}
+
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list::-webkit-scrollbar-thumb:hover,
+.ant-tabs-content .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #B0B0B0;
+}
