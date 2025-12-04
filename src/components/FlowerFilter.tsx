@@ -83,7 +83,7 @@ export default function FlowerFilter() {
       key: category.key,
       label: `${category.label} ${count > 0 ? `(${count})` : ''}`,
       children: (
-        <div className="space-y-3">
+        <div className="space-y-3 pt-4">
           {category.options.map((flower) => {
             const isChecked = selectedFlowers.find(f => f.id === flower.id);
             return (
