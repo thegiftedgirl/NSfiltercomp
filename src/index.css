@@ -16,7 +16,7 @@ body {
 .ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list {
   padding-top: 1.5rem;
   overflow-y: auto;
-  max-height: 280px;
+  max-height: 220px;
 }
 
 .ant-tabs-nav-operations {
@@ -29,7 +29,8 @@ body {
 
 .ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list::-webkit-scrollbar,
 .ant-tabs-content .overflow-y-auto::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
+  height: 4px;
 }
 
 .ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list::-webkit-scrollbar-track,
@@ -40,7 +41,8 @@ body {
 .ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list::-webkit-scrollbar-thumb,
 .ant-tabs-content .overflow-y-auto::-webkit-scrollbar-thumb {
   background-color: #D0D0D0;
-  border-radius: 4px;
+  border-radius: 2px;
+  min-height: 10px;
 }
 
 .ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list::-webkit-scrollbar-thumb:hover,
