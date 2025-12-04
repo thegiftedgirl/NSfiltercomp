@@ -7,3 +7,16 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-ink-bar {
+  right: auto;
+  left: 0;
+}
+
+.ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list {
+  padding-top: 1.5rem;
+}
+
+.ant-tabs-nav-operations {
+  display: none !important;
+}

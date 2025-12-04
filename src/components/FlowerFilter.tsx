@@ -314,7 +314,7 @@ export default function FlowerFilter() {
       key: category.key,
       label: `${category.label} ${count > 0 ? `(${count})` : ''}`,
       children: (
-        <div className="flex p-4 flex-col items-start gap-4 flex-1 self-stretch">
+        <div className="flex pt-6 px-4 pb-4 flex-col items-start gap-4 flex-1 self-stretch overflow-y-auto" style={{ maxHeight: 280 }}>
           {category.options.map((flower) => {
             const isChecked = selectedFlowers.find(f => f.id === flower.id);
             return (
