@@ -125,7 +125,7 @@ export default function FlowerFilter() {
           {selectedFlowers.length > 0 && (
             <>
               <Divider style={{ margin: 0 }} />
-              <div className="p-4">
+              <div className="px-4 pt-4 pb-2">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex flex-wrap gap-2 flex-1">
                     {selectedFlowers.map((flower) => (
