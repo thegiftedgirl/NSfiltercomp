@@ -362,18 +362,18 @@ export default function FlowerFilter() {
             <>
               <Divider style={{ margin: 0 }} />
               <div className="px-4 pt-4 pb-2">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex flex-wrap gap-1 flex-1">
-                    {selectedFlowers.map((flower) => (
-                      <Tag
-                        key={flower.id}
-                        closable
-                        onClose={() => handleRemoveTag(flower.id)}
-                      >
-                        {flower.name}
-                      </Tag>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-1 mb-3">
+                  {selectedFlowers.map((flower) => (
+                    <Tag
+                      key={flower.id}
+                      closable
+                      onClose={() => handleRemoveTag(flower.id)}
+                    >
+                      {flower.name}
+                    </Tag>
+                  ))}
+                </div>
+                <div className="flex justify-end">
                   <Button
                     type="link"
                     onClick={handleClearAll}
