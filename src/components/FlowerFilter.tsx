@@ -16,6 +16,8 @@ const flowerCategories = [
       { id: 'marigold', name: 'Marigold', category: 'annuals' },
       { id: 'petunia', name: 'Petunia', category: 'annuals' },
       { id: 'zinnia', name: 'Zinnia', category: 'annuals' },
+      { id: 'impatiens', name: 'Impatiens', category: 'annuals' },
+      { id: 'begonia', name: 'Begonia', category: 'annuals' },
     ]
   },
   {
@@ -25,6 +27,8 @@ const flowerCategories = [
       { id: 'rose', name: 'Rose', category: 'perennials' },
       { id: 'lavender', name: 'Lavender', category: 'perennials' },
       { id: 'peony', name: 'Peony', category: 'perennials' },
+      { id: 'hydrangea', name: 'Hydrangea', category: 'perennials' },
+      { id: 'iris', name: 'Iris', category: 'perennials' },
     ]
   },
   {
@@ -34,6 +38,8 @@ const flowerCategories = [
       { id: 'tulip', name: 'Tulip', category: 'bulbs' },
       { id: 'daffodil', name: 'Daffodil', category: 'bulbs' },
       { id: 'lily', name: 'Lily', category: 'bulbs' },
+      { id: 'hyacinth', name: 'Hyacinth', category: 'bulbs' },
+      { id: 'crocus', name: 'Crocus', category: 'bulbs' },
     ]
   },
   {
@@ -43,6 +49,8 @@ const flowerCategories = [
       { id: 'daisy', name: 'Daisy', category: 'wildflowers' },
       { id: 'poppy', name: 'Poppy', category: 'wildflowers' },
       { id: 'sunflower', name: 'Sunflower', category: 'wildflowers' },
+      { id: 'bluebell', name: 'Bluebell', category: 'wildflowers' },
+      { id: 'cornflower', name: 'Cornflower', category: 'wildflowers' },
     ]
   }
 ];
