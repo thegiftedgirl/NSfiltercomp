@@ -314,7 +314,7 @@ export default function FlowerFilter() {
       key: category.key,
       label: `${category.label} ${count > 0 ? `(${count})` : ''}`,
       children: (
-        <div className="flex px-4 pb-4 flex-col items-start gap-4 flex-1 self-stretch overflow-y-auto" style={{ maxHeight: 280, paddingTop: '1.5rem' }}>
+        <div className="flex px-4 pb-4 flex-col items-start gap-4 flex-1 self-stretch overflow-y-auto" style={{ maxHeight: 220, paddingTop: '1.5rem' }}>
           {category.options.map((flower) => {
             const isChecked = selectedFlowers.find(f => f.id === flower.id);
             return (
@@ -358,7 +358,7 @@ export default function FlowerFilter() {
             onChange={setActiveTab}
             tabPosition="left"
             items={tabItems}
-            style={{ height: 280, maxHeight: 280 }}
+            style={{ height: 220, maxHeight: 220 }}
           />
 
           {selectedFlowers.length > 0 && (
