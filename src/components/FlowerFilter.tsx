@@ -36,6 +36,16 @@ const flowerCategories = [
     ]
   },
   {
+    key: 'biennials',
+    label: 'Biennials',
+    options: [
+      { id: 'foxglove-bi', name: 'Foxglove', category: 'biennials' },
+      { id: 'hollyhock', name: 'Hollyhock', category: 'biennials' },
+      { id: 'sweet-william', name: 'Sweet William', category: 'biennials' },
+      { id: 'canterbury-bells', name: 'Canterbury Bells', category: 'biennials' },
+    ]
+  },
+  {
     key: 'bulbs',
     label: 'Bulbs',
     options: [
@@ -57,6 +67,213 @@ const flowerCategories = [
       { id: 'cornflower', name: 'Cornflower', category: 'wildflowers' },
       { id: 'bluebell', name: 'Bluebell', category: 'wildflowers' },
       { id: 'foxglove', name: 'Foxglove', category: 'wildflowers' },
+    ]
+  },
+  {
+    key: 'spring',
+    label: 'Spring Flowers',
+    options: [
+      { id: 'tulip-spring', name: 'Tulip', category: 'spring' },
+      { id: 'daffodil-spring', name: 'Daffodil', category: 'spring' },
+      { id: 'hyacinth-spring', name: 'Hyacinth', category: 'spring' },
+      { id: 'cherry-blossom', name: 'Cherry Blossom', category: 'spring' },
+      { id: 'crocus-spring', name: 'Crocus', category: 'spring' },
+    ]
+  },
+  {
+    key: 'summer',
+    label: 'Summer Flowers',
+    options: [
+      { id: 'sunflower-summer', name: 'Sunflower', category: 'summer' },
+      { id: 'rose-summer', name: 'Rose', category: 'summer' },
+      { id: 'lily-summer', name: 'Lily', category: 'summer' },
+      { id: 'dahlia-summer', name: 'Dahlia', category: 'summer' },
+      { id: 'zinnia-summer', name: 'Zinnia', category: 'summer' },
+    ]
+  },
+  {
+    key: 'fall',
+    label: 'Fall Flowers',
+    options: [
+      { id: 'chrysanthemum-fall', name: 'Chrysanthemum', category: 'fall' },
+      { id: 'aster-fall', name: 'Aster', category: 'fall' },
+      { id: 'dahlia-fall', name: 'Dahlia', category: 'fall' },
+      { id: 'sedum-fall', name: 'Sedum', category: 'fall' },
+    ]
+  },
+  {
+    key: 'winter',
+    label: 'Winter Flowers',
+    options: [
+      { id: 'hellebore', name: 'Hellebore', category: 'winter' },
+      { id: 'camellia', name: 'Camellia', category: 'winter' },
+      { id: 'paperwhite', name: 'Paperwhite', category: 'winter' },
+      { id: 'snowdrop', name: 'Snowdrop', category: 'winter' },
+    ]
+  },
+  {
+    key: 'shrubs',
+    label: 'Shrubs with Flowers',
+    options: [
+      { id: 'rose-shrub', name: 'Rose', category: 'shrubs' },
+      { id: 'hydrangea-shrub', name: 'Hydrangea', category: 'shrubs' },
+      { id: 'azalea', name: 'Azalea', category: 'shrubs' },
+      { id: 'lilac', name: 'Lilac', category: 'shrubs' },
+      { id: 'rhododendron', name: 'Rhododendron', category: 'shrubs' },
+    ]
+  },
+  {
+    key: 'climbers',
+    label: 'Climbers & Vines',
+    options: [
+      { id: 'wisteria', name: 'Wisteria', category: 'climbers' },
+      { id: 'clematis', name: 'Clematis', category: 'climbers' },
+      { id: 'morning-glory', name: 'Morning Glory', category: 'climbers' },
+      { id: 'honeysuckle', name: 'Honeysuckle', category: 'climbers' },
+      { id: 'climbing-rose', name: 'Climbing Rose', category: 'climbers' },
+    ]
+  },
+  {
+    key: 'cut-flowers',
+    label: 'Cut Flowers',
+    options: [
+      { id: 'rose-cut', name: 'Rose', category: 'cut-flowers' },
+      { id: 'tulip-cut', name: 'Tulip', category: 'cut-flowers' },
+      { id: 'lily-cut', name: 'Lily', category: 'cut-flowers' },
+      { id: 'alstroemeria', name: 'Alstroemeria', category: 'cut-flowers' },
+      { id: 'carnation', name: 'Carnation', category: 'cut-flowers' },
+    ]
+  },
+  {
+    key: 'dried',
+    label: 'Dried Flowers',
+    options: [
+      { id: 'statice', name: 'Statice', category: 'dried' },
+      { id: 'strawflower', name: 'Strawflower', category: 'dried' },
+      { id: 'baby-breath', name: "Baby's Breath", category: 'dried' },
+      { id: 'hydrangea-dried', name: 'Hydrangea', category: 'dried' },
+      { id: 'lavender-dried', name: 'Lavender', category: 'dried' },
+    ]
+  },
+  {
+    key: 'edible',
+    label: 'Edible Flowers',
+    options: [
+      { id: 'nasturtium', name: 'Nasturtium', category: 'edible' },
+      { id: 'pansy-edible', name: 'Pansy', category: 'edible' },
+      { id: 'violet', name: 'Violet', category: 'edible' },
+      { id: 'calendula', name: 'Calendula', category: 'edible' },
+      { id: 'squash-blossom', name: 'Squash Blossom', category: 'edible' },
+    ]
+  },
+  {
+    key: 'fragrant',
+    label: 'Fragrant Flowers',
+    options: [
+      { id: 'jasmine-fragrant', name: 'Jasmine', category: 'fragrant' },
+      { id: 'gardenia', name: 'Gardenia', category: 'fragrant' },
+      { id: 'honeysuckle-fragrant', name: 'Honeysuckle', category: 'fragrant' },
+      { id: 'lilac-fragrant', name: 'Lilac', category: 'fragrant' },
+      { id: 'tuberose', name: 'Tuberose', category: 'fragrant' },
+    ]
+  },
+  {
+    key: 'sun-loving',
+    label: 'Sun-Loving',
+    options: [
+      { id: 'rose-sun', name: 'Rose', category: 'sun-loving' },
+      { id: 'sunflower-sun', name: 'Sunflower', category: 'sun-loving' },
+      { id: 'lavender-sun', name: 'Lavender', category: 'sun-loving' },
+      { id: 'marigold-sun', name: 'Marigold', category: 'sun-loving' },
+      { id: 'geranium', name: 'Geranium', category: 'sun-loving' },
+    ]
+  },
+  {
+    key: 'shade-loving',
+    label: 'Shade-Loving',
+    options: [
+      { id: 'impatiens-shade', name: 'Impatiens', category: 'shade-loving' },
+      { id: 'begonia-shade', name: 'Begonia', category: 'shade-loving' },
+      { id: 'hosta-shade', name: 'Hosta', category: 'shade-loving' },
+      { id: 'astilbe', name: 'Astilbe', category: 'shade-loving' },
+      { id: 'bleeding-heart', name: 'Bleeding Heart', category: 'shade-loving' },
+    ]
+  },
+  {
+    key: 'tropical',
+    label: 'Tropical Flowers',
+    options: [
+      { id: 'hibiscus-tropical', name: 'Hibiscus', category: 'tropical' },
+      { id: 'bird-of-paradise', name: 'Bird of Paradise', category: 'tropical' },
+      { id: 'plumeria', name: 'Plumeria', category: 'tropical' },
+      { id: 'orchid', name: 'Orchid', category: 'tropical' },
+      { id: 'anthurium', name: 'Anthurium', category: 'tropical' },
+    ]
+  },
+  {
+    key: 'white',
+    label: 'White & Cream',
+    options: [
+      { id: 'rose-white', name: 'White Rose', category: 'white' },
+      { id: 'lily-white', name: 'White Lily', category: 'white' },
+      { id: 'ranunculus-white', name: 'White Ranunculus', category: 'white' },
+      { id: 'hydrangea-white', name: 'White Hydrangea', category: 'white' },
+      { id: 'gardenia-white', name: 'Gardenia', category: 'white' },
+    ]
+  },
+  {
+    key: 'pink',
+    label: 'Pink',
+    options: [
+      { id: 'peony-pink', name: 'Pink Peony', category: 'pink' },
+      { id: 'carnation-pink', name: 'Pink Carnation', category: 'pink' },
+      { id: 'gerbera-pink', name: 'Pink Gerbera', category: 'pink' },
+      { id: 'cherry-blossom-pink', name: 'Cherry Blossom', category: 'pink' },
+      { id: 'rose-pink', name: 'Pink Rose', category: 'pink' },
+    ]
+  },
+  {
+    key: 'red',
+    label: 'Red',
+    options: [
+      { id: 'rose-red', name: 'Red Rose', category: 'red' },
+      { id: 'dahlia-red', name: 'Red Dahlia', category: 'red' },
+      { id: 'tulip-red', name: 'Red Tulip', category: 'red' },
+      { id: 'poppy-red', name: 'Red Poppy', category: 'red' },
+      { id: 'amaryllis-red', name: 'Red Amaryllis', category: 'red' },
+    ]
+  },
+  {
+    key: 'yellow-orange',
+    label: 'Yellow & Orange',
+    options: [
+      { id: 'marigold-yellow', name: 'Marigold', category: 'yellow-orange' },
+      { id: 'sunflower-yellow', name: 'Sunflower', category: 'yellow-orange' },
+      { id: 'daffodil-yellow', name: 'Daffodil', category: 'yellow-orange' },
+      { id: 'chrysanthemum-yellow', name: 'Chrysanthemum', category: 'yellow-orange' },
+      { id: 'calendula-orange', name: 'Calendula', category: 'yellow-orange' },
+    ]
+  },
+  {
+    key: 'purple-blue',
+    label: 'Purple & Blue',
+    options: [
+      { id: 'lavender-purple', name: 'Lavender', category: 'purple-blue' },
+      { id: 'iris-purple', name: 'Iris', category: 'purple-blue' },
+      { id: 'delphinium-blue', name: 'Delphinium', category: 'purple-blue' },
+      { id: 'hydrangea-blue', name: 'Blue Hydrangea', category: 'purple-blue' },
+      { id: 'cornflower-blue', name: 'Cornflower', category: 'purple-blue' },
+    ]
+  },
+  {
+    key: 'herbaceous',
+    label: 'Herbaceous',
+    options: [
+      { id: 'daisy-herb', name: 'Daisy', category: 'herbaceous' },
+      { id: 'poppy-herb', name: 'Poppy', category: 'herbaceous' },
+      { id: 'pansy-herb', name: 'Pansy', category: 'herbaceous' },
+      { id: 'petunia-herb', name: 'Petunia', category: 'herbaceous' },
+      { id: 'zinnia-herb', name: 'Zinnia', category: 'herbaceous' },
     ]
   }
 ];
