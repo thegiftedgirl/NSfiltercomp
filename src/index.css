@@ -15,6 +15,8 @@ body {
 
 .ant-tabs-left > .ant-tabs-nav .ant-tabs-nav-list {
   padding-top: 1.5rem;
+  overflow-y: auto;
+  max-height: 280px;
 }
 
 .ant-tabs-nav-operations {

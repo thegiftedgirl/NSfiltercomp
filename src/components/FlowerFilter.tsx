@@ -349,7 +349,10 @@ export default function FlowerFilter() {
       </Button>
 
       {isOpen && (
-        <div className="absolute top-full mt-3 bg-white rounded-lg shadow-lg border border-gray-200 z-10" style={{ width: 440 }}>
+        <div
+          className="absolute top-full mt-3 bg-white rounded-lg shadow-lg border border-gray-200 z-10"
+          style={{ width: 440, paddingBottom: selectedFlowers.length === 0 ? '1rem' : 0 }}
+        >
           <Tabs
             activeKey={activeTab}
             onChange={setActiveTab}
