@@ -350,7 +350,7 @@ export default function FlowerFilter() {
             onChange={setActiveTab}
             tabPosition="left"
             items={tabItems}
-            style={{ minHeight: 300 }}
+            style={{ height: 280, maxHeight: 280 }}
           />
 
           {selectedFlowers.length > 0 && (
