@@ -336,15 +336,20 @@ export default function FlowerFilter() {
   return (
     <div className="w-full max-w-3xl relative">
       <Button
-        type={selectedFlowers.length > 0 ? 'primary' : 'default'}
+        type="default"
         icon={<FilterOutlined />}
         onClick={handleToggle}
+        style={selectedFlowers.length > 0 ? {
+          backgroundColor: 'white',
+          borderColor: '#1677ff',
+          color: '#1677ff'
+        } : {}}
       >
         Filters {selectedFlowers.length > 0 && `(${selectedFlowers.length})`}
       </Button>
 
       {isOpen && (
-        <div className="absolute top-full mt-3 bg-white rounded-lg shadow-lg border border-gray-200 w-full z-10">
+        <div className="absolute top-full mt-3 bg-white rounded-lg shadow-lg border border-gray-200 z-10" style={{ width: 440 }}>
           <Tabs
             activeKey={activeTab}
             onChange={setActiveTab}
