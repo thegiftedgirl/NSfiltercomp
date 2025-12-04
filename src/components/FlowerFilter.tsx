@@ -103,7 +103,7 @@ export default function FlowerFilter() {
   });
 
   return (
-    <div className="w-full max-w-3xl">
+    <div className="w-full max-w-3xl relative">
       <Button
         type={selectedFlowers.length > 0 ? 'primary' : 'default'}
         icon={<FilterOutlined />}
@@ -113,7 +113,7 @@ export default function FlowerFilter() {
       </Button>
 
       {isOpen && (
-        <div className="mt-3 bg-white rounded-lg shadow-lg border border-gray-200">
+        <div className="absolute top-full mt-3 bg-white rounded-lg shadow-lg border border-gray-200 w-full z-10">
           <Tabs
             activeKey={activeTab}
             onChange={setActiveTab}
